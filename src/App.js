@@ -8,21 +8,21 @@ import Card from './components/Card/Card';
 
 function App() {
   
-  // const [topAlbumData,setTopAlbumData]=useState([])
+  const [topAlbumData,setTopAlbumData]=useState([])
 
-  // useEffect(()=>{
-  //   generateData()
-  // },[])
+  useEffect(()=>{
+    generateData()
+  },[])
 
-  // const generateData = async () => {
-  //   try{
-  //   const data =await fetchTopAlbumns()
-  //   console.log(data)
-  //   setTopAlbumData(data)
-  //   }catch(err){
-  //     console.log(err)
-  //   }
-  // }
+  const generateData = async () => {
+    try{
+    const data =await fetchTopAlbumns()
+    console.log(data)
+    setTopAlbumData(data)
+    }catch(err){
+      console.log(err)
+    }
+  }
 
   ////why hoisting working in arrow function
  
@@ -30,9 +30,11 @@ function App() {
     <div className="App">
       <NavBar/>
       <Hero/>
-      {/* {topAlbumData.map((item)=>{
+      <div className='parent'>
+      {topAlbumData.map((item)=>{
           return <Card key={item.id} data={item} type="album"/>
-      })} */}
+      })}
+      </div>
     </div>
   );
 }
