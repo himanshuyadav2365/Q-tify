@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import {fetchTopAlbumns} from './components/api/api'
 import {useEffect, useState} from 'react'
 import Card from './components/Card/Card';
+import Section from './components/Section/Section';
 
 
 function App() {
@@ -30,10 +31,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <Hero/>
-      <div className='parent'>
-      {topAlbumData.map((item)=>{
-          return <Card key={item.id} data={item} type="album"/>
-      })}
+      <div>
+        <Section title="Top Album" data={topAlbumData}/>
       </div>
     </div>
   );

@@ -25,3 +25,7 @@ body{
     overflow-x: hidden;
     margin: 0px;
 }
+
+p{
+    margin: 0px;
+}
