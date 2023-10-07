@@ -5,6 +5,7 @@ import {fetchTopAlbumns} from './components/api/api'
 import {useEffect, useState} from 'react'
 import Card from './components/Card/Card';
 import Section from './components/Section/Section';
+import Takehome from './components/Takehome/Takehome';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <div>
         <Section title="Top Album" data={topAlbumData}/>
       </div>
+      <Takehome/>
     </div>
   );
 }
