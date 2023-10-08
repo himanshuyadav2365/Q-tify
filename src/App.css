@@ -1,4 +1,6 @@
-.album{
-    margin-top: 80px;
-    margin-bottom: 30px;
+.sectionWrapper{
+    padding: 0px 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }

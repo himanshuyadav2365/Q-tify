@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .toggleText{
@@ -20,3 +20,4 @@
 .cardWrapper{
     margin-top: 18px;
 }
+
