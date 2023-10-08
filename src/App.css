@@ -1,5 +1,4 @@
-.parent{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
+.album{
+    margin-top: 80px;
+    margin-bottom: 30px;
 }

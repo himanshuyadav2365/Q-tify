@@ -3,6 +3,7 @@ import styles from './Section.module.css'
 import { useState } from 'react'
 import { CircularProgress } from '@mui/material'
 import Card from '../Card/Card'
+import Carousel from '../Carousel/Carousel'
 
 const Section = ({title,data}) => {
 
@@ -27,7 +28,9 @@ const Section = ({title,data}) => {
                     {data.map((item)=>{
                         return <Card key={item.id} data={item} type="album"/>
                     })}
-                </div> :null
+                </div> :(
+                    <Carousel data={data} componentRender={(ele) => <Card data={ele} type="album"/>}/>
+                )
                 } 
               </div>  
             )

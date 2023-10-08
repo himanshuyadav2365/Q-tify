@@ -29,3 +29,12 @@ body{
 p{
     margin: 0px;
 }
+
+.swiper-slide{
+    width:auto !important;
+}
+
+img,svg{
+    display: block;
+    max-width: 100%;
+}
